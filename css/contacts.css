@@ -1,0 +1,69 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+/*common styles !!!YOU DON'T NEED THEM */
+.effect {
+  width: 100%;
+  padding: 50px 0px 70px 0px;
+  background-color: #212121;
+}
+
+.effect:nth-child(2) {
+  margin-top: 0px;
+}
+.effect:nth-child(2n+1) {
+  background-color: #fff;
+}
+.effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.effect .buttons {
+  margin-top: 0px;
+  display: flex;
+  justify-content: left;
+}
+.effect a:last-child {
+  margin-right: 0px;
+}
+/*common link styles !!!YOU NEED THEM*/
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.effect a {
+  text-decoration: none !important;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.effect a i {
+  position: relative;
+  z-index: 3;
+}
+.effect a.fb {
+  background-color: #3b5998;
+}
+  
+.effect a.insta {
+  background-color: #bc2a8d;
+}
+
+/* aeneas effect */
+.effect.aeneas a {
+  transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+}
+.effect.aeneas a i {
+  transition: transform 0.4s linear 0s;
+}
+.effect.aeneas a:hover {
+  transform: rotate(360deg);
+  border-radius: 50%;
+}
+.effect.aeneas a:hover i {
+  transform: rotate(-360deg);
+}
